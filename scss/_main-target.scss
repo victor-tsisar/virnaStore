@@ -1,0 +1,217 @@
+.main-target__inner {
+  padding-top: 80px;
+  position: relative;
+}
+
+.main-target__title {
+  font-family: $extra-font;
+  font-weight: 500;
+  font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+  line-height: 127%;
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+    text-align: center;
+    margin-bottom: calc(30px + (100 - 30) * ((100vw - 768px) / (1920 - 768)));
+  }
+  @media (min-width: 1920px) {
+    font-size: 30px;
+    margin-bottom: 100px;
+  }
+}
+
+.main-target__text {
+  padding: 0 30px;
+  color: $text-color;
+  margin-bottom: 30px;
+  @media (min-width: 768px) {
+    max-width: calc(270px + (375 - 270) * ((100vw - 768px) / (1920 - 768)));
+    margin-left: auto;
+    margin-bottom: 0;
+    top: calc(0px + (-85 + 0) * ((100vw - 768px) / (1920 - 768)));
+    position: relative;
+  }
+  @media (min-width: 1920px) {
+    max-width: 375px;
+    top: -85px;
+  }
+}
+
+.main-target__label {
+  font-family: $extra-font;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 125%;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  margin-bottom: 42px;
+  @media (min-width: 768px) {
+    transform: rotate(-180deg) translateY(calc(0% + (180 - 0) * ((100vw - 768px) / (1920 - 768))));
+  }
+  @media (min-width: 1440px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1920px) {
+    transform: rotate(-180deg) translateY(400%);
+  }
+}
+
+.main-target__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.main-target__form-wrapper {
+  background-color: $bg-main;
+  margin-bottom: calc(80px + (333 - 80) * ((100vw - 320px) / (1920 - 320)));
+  @media (min-width: 1920px) {
+  margin-bottom: 333px;
+  }
+  .container {
+    position: relative;
+  }
+}
+
+.main-target__form-bg {
+  width: calc(130px + (500 - 130) * ((100vw - 320px) / (1920 - 320)));
+  min-height: calc(300px + (890 - 300) * ((100vw - 320px) / (1920 - 320)));
+  position: absolute;
+  left: 15px;
+  top: 0;
+  z-index: 5;
+  @media (min-width: 375px) {
+    top: -22px;
+    top: calc(-22px + (-232 + 22) * ((100vw - 375px) / (1920 - 375)));
+  }
+  @media (min-width: 500px) {
+    left: calc(50% - calc(40px + (130 - 40) * ((100vw - 500px) / (1440 - 500))));
+    transform: translateX(-50%);
+  }
+  @media (min-width: 768px) {
+    min-height: 380px;
+  }
+  @media (min-width: 1440px) {
+    left: calc(50% - calc(130px + (250 - 130) * ((100vw - 1440px) / (1920 - 1440))));
+  }
+  @media (min-width: 1920px) {
+    width: 500px;
+    min-height: 890px;
+    left: calc(50% - 250px);
+    top: -232px;
+  }
+}
+
+.main-target__form {
+  position: relative;
+  background-color: $bg-main;
+}
+
+.main-target__form-filter {
+  padding: 15px;
+  max-width: calc(150px + (465 - 150) * ((100vw - 320px) / (1920 - 320)));
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  margin: 0 0 0 auto;
+  position: relative;
+  @media (min-width: 1920px) {
+    max-width: 565px;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  label span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  input:focus+span {
+    border: 1px solid $main-color;
+    border-radius: 3px;
+  }
+
+  input:checked+span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 6px;
+    background: url('../images/icon_check.svg') no-repeat center center / contain;
+    border: none;
+  }
+
+  label:disabled+span {
+    opacity: 0.4;
+  }
+
+  label:checked:disabled+span::before {
+    opacity: 0.4;
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 465px;
+  }
+}
+
+.main-target__form-title {
+  font-family: $extra-font;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  margin-bottom: 19px;
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.counter {
+  font-family: "CeraPRO-Regular";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 231%;
+  position: absolute;
+  right: 15px;
+}
+
+.main-target__form-btn {
+  width: 78px;
+  height: 33px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 231%;
+  text-align: left;
+  background: transparent url('../images/icon_close.svg') no-repeat right top / 20px 20px;
+  cursor: pointer;
+  position: absolute;
+  top: calc(100% + 15px);
+  z-index: 5;
+  @media (min-width: 375px) {
+    top: calc(100% + 33px);
+  }
+}

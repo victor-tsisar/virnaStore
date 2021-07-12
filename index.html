@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukrainian brand</title>
+
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__bg">
+                <img src="./images/main_mobile.jpg" alt="Main photo">
+            </div>
+            <div class="header__inner container">
+                <a class="logo-main" href="#">
+                    <img src="./images/logo_virna.svg" alt="logo-Virna">
+                </a>
+                <a class="logo-sub" href="#">
+                    <img src="./images/logo_bonum.svg" alt="logo-bonum">
+                </a>
+                <h1 class="header__title title">
+                    Ukrainian brand
+                    <span class="header__subtitle">of women’s clothing</span>
+                </h1>
+
+                <p class="header__label">Online store<span>2020</span></p>
+
+                <nav class="menu">
+                    <button class="menu__burger" type="button" data-menu-burger>
+                        <span></span>
+                    </button>
+                    <ul class="menu__items">
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">
+                                <img src="./images/icon_like.svg" alt="like">
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">
+                                <img src="./images/icon_camera.svg" alt="like">
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__item-link" href="#">
+                                <img src="./images/icon_cart.svg" alt="like">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="menu__lang" type="button" data-menu-lang>ru</button>
+                    <ul class="menu__lang-list" data-lang-list>
+                        <li class="menu__lang-item" data-lang-item>ua</li>
+                        <li class="menu__lang-item" data-lang-item>en</li>
+                        <li class="menu__lang-item" data-lang-item>pl</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="page">
+            <section class="main-target">
+                <div class="main-target__inner container">
+                    <h2 class="main-target__title">Main target</h2>
+                    <p class="main-target__text">
+                        Основная деятельность заказчика такая. У него есть такие проблемы. При создании нового дизайна
+                        учитывались такие факторы - фактор1, фактор2 и фактор3.
+                    </p>
+                    <p class="main-target__label">1920</p>
+                </div>
+
+                <div class="main-target__form-wrapper">
+                    <div class="container">
+                        <div class="main-target__form-bg">
+                            <img src="./images/target-bg.jpg" alt="target Phono">
+                        </div>
+
+                        <form class="main-target__form" action="#">
+                            <fieldset class="main-target__form-filter">
+                                <p class="main-target__form-title">Filters</p>
+                                <div class="main-target__form-count counter">
+                                    <span class="counter__current" data-counter-current>2 </span>
+                                    |
+                                    <span class="counter__total" data-counter-total> 4</span>
+                                </div>
+
+                                <label for="form-chek-material">
+                                    <input class="main-target__form-check" id="form-chek-material" name="material"
+                                        type="checkbox" value="material" data-input-filters />
+                                    <span></span>
+                                    material
+                                </label>
+                                <label for="form-chek-color">
+                                    <input class="main-target__form-check" id="form-chek-color" name="color"
+                                        type="checkbox" value="color" data-input-filters />
+                                    <span></span>
+                                    color
+                                </label>
+                                <label for="form-chek-size">
+                                    <input class="main-target__form-check" id="form-chek-size" name="size"
+                                        type="checkbox" value="size" data-input-filters />
+                                    <span></span>
+                                    size
+                                </label>
+                                <button class="main-target__form-btn" type="reset" data-button-filters-reset>Clear
+                                    all</button>
+                            </fieldset>
+
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="promo-card">
+                <div class="container">
+                    <h2 class="promo-card__title">The world of fashion</h2>
+                    <nav class="promo-card__menu">
+                        <ul class="promo-card__menu-items">
+                            <li class="promo-card__menu-item">
+                                <span>size</span>
+                                <select name="size" id="select-size">
+                                    <option value="">S / M</option>
+                                    <option value="">M / L</option>
+                                    <option value="">L / XL</option>
+                                </select>
+                            </li>
+                            <li class="promo-card__menu-item">
+                                <span>style</span>
+                                <select name="style" id="select-style">
+                                    <option value="">casual</option>
+                                    <option value="">casual 2</option>
+                                    <option value="">casual 3</option>
+                                </select>
+                            </li>
+                            <li class="promo-card__menu-item">
+                                <span>color</span>
+                                <select name="color" id="select-color">
+                                    <option value="">blue</option>
+                                    <option value="">red</option>
+                                    <option value="">pink</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <p class="promo-card__subtitle">is woven from stories</p>
+                    </nav>
+                    <div class="promo-card__inner">
+                        <div class="promo-card__photo">
+                            <img src="./images/promo-card-bg.jpg" alt="Promo good's photo" />
+                            <p>is woven from stories</p>
+                        </div>
+
+                        <div class="card-wrapper">
+                            <div class="card">
+                                <div class="card__promo">
+                                    <img src="./images/card-bg.jpg" alt="Promo good's photo" />
+                                </div>
+
+                                <div class="card__color-list">
+                                    <label class="card__color-item">
+                                        <input class="input-color" name="input-color" type="radio" checked />
+                                        <span class="color color--1"></span>
+                                    </label>
+                                    <label class="card__color-item">
+                                        <input class="input-color" name="input-color" type="radio" />
+                                        <span class="color color--2"></span>
+                                    </label>
+                                    <label class="card__color-item">
+                                        <input class="input-color" name="input-color" type="radio" />
+                                        <span class="color color--3"></span>
+                                    </label>
+                                </div>
+                                <p class="card__title">Название товара может быть длинное Название товара может быть
+                                    длинное
+                                    Название товара может быть длинное</p>
+                                <p class="card__price">1150 грн</p>
+                            </div>
+
+                            <p class="promo-card__label">product card</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__inner container">
+                <a class="footer__logo-sub" href="#">
+                    <img src="./images/logo_bonum.svg" alt="logo-bonum">
+                </a>
+                <p class="footer__title title">Thank you
+                    <span class="footer__subtitle">for watching</span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

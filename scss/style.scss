@@ -1,0 +1,29 @@
+$main-font: 'Montserrat-Regular', sans-serif;
+$extra-font: "CeraPRO-Medium", sans-serif;
+$main-color: #000000;
+$text-color: #292929;
+$extra-color: #808080;
+$bg-main: #F6FBFE;
+
+@import "normalize";
+@import "fonts";
+@import "general";
+@import "header";
+@import "menu";
+@import "main-target";
+@import "promo-card";
+@import "footer";
+
+// @media (min-width: 375px) {}
+
+// @media (min-width: 500px) {}
+
+// @media (min-width: 768px) {}
+
+// @media (min-width: 960px) {}
+
+// @media (min-width: 1366px) {}
+
+// @media (min-width: 1440px) {}
+
+// @media (min-width: 1920px) {}

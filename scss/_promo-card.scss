@@ -1,0 +1,247 @@
+.promo-card__title {
+  max-width: 220px;
+  width: 100%;
+  font-family: "CeraPRO-Bold";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    max-width: calc(220px + (470 - 220) * ((100vw - 768px) / (1920 - 768)));
+    font-size: calc(32px + (56 - 32) * ((100vw - 768px) / (1920 - 768)));
+    margin: 0 calc(100px + (220 - 100) * ((100vw - 768px) / (1920 - 768))) 30px auto;
+  }
+
+  @media (min-width: 960px) {
+    margin-bottom: -15px;
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 470px;
+    font-size: 56px;
+    margin-right: 220px;
+  }
+}
+
+.promo-card__menu,
+.promo-card__menu-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-card__menu {
+  margin-bottom: 32px;
+}
+
+.promo-card__menu-item {
+  font-size: 11px;
+  line-height: 231%;
+  @media (min-width: 360px) {
+    font-size: 13px;
+  }
+
+  span {
+    font-family: "CeraPRO-Regular";
+    font-weight: 400;
+    color: $text-color;
+  }
+
+  select {
+    font-family: "CeraPRO-Medium";
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:not(:last-child) {
+      margin-right: calc(15px + (60 - 15) * ((100vw - 360px) / (1920 - 360)));
+    @media (min-width: 1920px) {
+      margin-right: 60px;
+    }
+  }
+}
+
+.promo-card__subtitle {
+  display: none;
+  font-family: "CeraPRO-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 112%;
+  text-transform: lowercase;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.promo-card__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}
+
+.promo-card__photo {
+  width: 100%;
+  margin-bottom: 32px;
+
+  @media (min-width: 768px) {
+    max-width: calc(330px + (690 - 330) * ((100vw - 768px) / (1920 - 768)));
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 690px;
+  }
+
+  p {
+    font-family: "CeraPRO-Regular";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 112%;
+    text-transform: lowercase;
+    text-align: right;
+    margin-top: 32px;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 100%;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    max-width: calc(172px + (330 - 172) * ((100vw - 768px) / (1920 - 768)));
+  }
+
+  @media (min-width: 1920px) {
+    max-width: 330px;
+  }
+}
+
+.card__promo {
+  max-width: 690px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.card__color-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card__color-item {
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  input:checked+span::before {
+    border: 1px solid $main-color;
+  }
+
+  label:disabled+span {
+    opacity: 0.4;
+  }
+
+  label:checked:disabled+span::before {
+    opacity: 0.4;
+  }
+}
+
+.color {
+  &--1 {
+    background-color: #EEDBD5;
+  }
+
+  &--2 {
+    background-color: #82BDCF;
+  }
+
+  &--3 {
+    background-color: #9C1744;
+  }
+}
+
+.card__title {
+  font-family: "CeraPRO-Light";
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  @media (min-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+.card__price {
+  font-family: "CeraPRO-Regular";
+  font-weight: 400;
+}
+
+.promo-card__label {
+  align-self: center;
+  font-family: "CeraPRO-Regular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-left: calc(32px + (220 - 32) * ((100vw - 320px) / (1920 - 320)));
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-left: 220px;
+  }
+}
